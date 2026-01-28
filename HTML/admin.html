@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<hr>
+
+<h3>👨‍⚕️ Manage Doctor Details</h3>
+<input id="docName" placeholder="Doctor Name">
+<input id="specialization" placeholder="Specialization">
+<button onclick="addDoctor()">Add Doctor</button>
+
+<hr>
+
+<h3>🏥 Schedule Operation (OT)</h3>
+
+<input type="date" id="opDate">
+<input type="time" id="opTime">
+<input id="otNumber" placeholder="OT Number">
+
+<input id="anesthesia" placeholder="Anesthesia Type">
+<input id="surgeon" placeholder="Surgeon Name">
+<input id="nurse" placeholder="Nurse Name">
+
+<textarea id="remarks" placeholder="Remarks"></textarea>
+
+<button onclick="scheduleOperation()">Schedule Operation</button>
+
+<hr>
+
+<h3>📅 View OT Schedules</h3>
+<button onclick="viewSchedules()">Load Schedules</button>
+<ul id="scheduleList"></ul>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+</html>
